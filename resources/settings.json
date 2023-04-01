@@ -7,7 +7,7 @@
     "tile_size": 32,
     "player_speed": 4,
     "player_turn_speed": 4,
-    "FOV": 70,
-    "width_divisions": 14,
-    "use_textures": true
+    "FOV": 60,
+    "width_divisions": 7,
+    "use_textures": false
 }

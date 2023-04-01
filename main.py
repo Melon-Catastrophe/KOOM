@@ -33,9 +33,9 @@ class Game(arcade.Window):
         self.object_renderer.render()
 
         # Debugging information
-        arcade.draw_text("X: " + str(self.player.center_x), 40, self.settings.screen_height - 64)
-        arcade.draw_text("Y: " + str(self.player.center_y), 40, self.settings.screen_height - 80)
-        arcade.draw_text("Angle: " + str(self.player.angle), 40, self.settings.screen_height - 100)
+        # arcade.draw_text("X: " + str(self.player.center_x), 40, self.settings.screen_height - 64)
+        # arcade.draw_text("Y: " + str(self.player.center_y), 40, self.settings.screen_height - 80)
+        # arcade.draw_text("Angle: " + str(self.player.angle), 40, self.settings.screen_height - 100)
 
     def on_key_press(self, key, modifiers):
         if key == arcade.key.UP or key == arcade.key.W:
