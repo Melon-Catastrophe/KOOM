@@ -1,0 +1,13 @@
+{
+    "fps": "30",
+    "screen_height": 448,
+    "screen_width": 800,
+    "title": "KOOM",
+    "tile_scaling": 0.25,
+    "tile_size": 32,
+    "player_speed": 4,
+    "player_turn_speed": 4,
+    "FOV": 70,
+    "width_divisions": 14,
+    "use_textures": true
+}
