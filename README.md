@@ -8,13 +8,13 @@ I was already familiar with Arcade, a 2D game engine created for Python, so I de
 
 Firstly, we need a map and a player to run around the map. This is easy enough to do using Arcade:
 
-![top_view_no_rays](resources\doc\top_view_no_rays.gif)
+![top_view_no_rays](https://github.com/Melon-Catastrophe/Wolfenstein-like-Renderer/blob/master/resources/doc/top_view_no_rays.gif?raw=true)
 
 ### Part Two: Raycasting
 
 One of the most important parts of making this style of 3D renderer is to design a Raycaster. Raycasting sends a myriad of rays out from the player to the world within the player's Field of View. The rays will stop when they hit something. The distance of each ray will tell us how tall we should make each section of wall. A visualization of these rays can be seen below.
 
-![raycasting](resources\doc\raycasting.gif)
+![raycasting](https://github.com/Melon-Catastrophe/Wolfenstein-like-Renderer/blob/master/resources/doc/raycasting.gif?raw=true)
 
 ### Part Three: Object Rendering
 
@@ -22,11 +22,11 @@ Now we can render a wall for each ray that was calculated. For each ray, we will
 
 By drawing these rectangles one after another, we can get a result like the one below:
 
-​	![fpv_white](resources\doc\fpv_white.gif)
+​	![fpv_white](https://github.com/Melon-Catastrophe/Wolfenstein-like-Renderer/blob/master/resources/doc/fpv_white.gif?raw=true)
 
 This looks like a good proof-of-concept, but it is pretty difficult to see depth information. We can change that by assigning a grayscale value to each wall that changes depending on its y-coordinate. This is shown below:
 
-![fpv_grayscale](resources\doc\fpv_grayscale.gif)
+![fpv_grayscale](https://github.com/Melon-Catastrophe/Wolfenstein-like-Renderer/blob/master/resources/doc/fpv_grayscale.gif?raw=true)
 
 As you can see, it is a lot easier now to see depth. You may also notice that certain walls look pretty distorted. I believe this is because no calculations are being performed to simulate a perspective plane. 
 
